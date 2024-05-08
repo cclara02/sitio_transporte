@@ -12,6 +12,7 @@ body{
 
 header{
     background-color: #2664a1;
+    padding: 20px;
 }
 
 header h1{
@@ -49,6 +50,7 @@ nav ul li a{
     justify-content: center;
     
 }
+
 nav ul li a:hover{
     background-color: rgba(0, 0, 0, 0.3);
 }
@@ -67,5 +69,23 @@ footer{
 .holder{
     width: 960px;
     margin: 0 auto;
-    
 }
+
+h2{
+    color: #2e64a1;
+    font-weight: 400;
+}
+
+/* inicio home */
+
+.bienvenidos{
+    width: 75%;
+}
+
+.testimonios{
+    width: 25%;
+}
+
+
+
+/* fin home */
