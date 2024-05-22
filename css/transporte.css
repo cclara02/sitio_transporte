@@ -21,7 +21,7 @@ header h1 {
     font-style: italic;
     /* display: inline-flex;  forma con caja flexible de correr el titulo*/
     display: inline-block;
-    position: relative;
+    /* position: relative; */
     bottom: 35px;
 }
 
@@ -49,6 +49,7 @@ nav ul li a {
     padding: 3px 0;
     display: flex;
     justify-content: center;
+   
 
 }
 
@@ -80,7 +81,7 @@ h2 {
 
 /* inicio home */
 
-.homeimg img{
+.homeimg img {
     max-width: 100%;
 }
 
@@ -236,3 +237,69 @@ h2 {
 }
 
 /* fin contacto */
+
+
+/* inicio media 550 */
+@media screen and (max-width:550px) {
+    .columnas {
+        flex-direction: column;
+    }
+
+    .bienvenidos,
+    .testimonios {
+        width: 100%;
+    }
+
+    .holder {
+        padding: 0 16px;
+    }
+
+    .personas {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .persona {
+        width: 47%;
+    }
+
+    .contacto {
+        flex-direction: column;
+    }
+
+    .datos {
+        display: none;
+        /*desaparecen los elementos*/
+    }
+
+    header .holder {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 16px 0;
+    }
+
+    header h1 {
+        position: static;
+        margin-left: 10px;
+        font-size: 25px;
+    }
+
+    header img{
+        max-width: 80px;
+    }
+    
+}
+/* fin media 550 */
+
+/* inicio de media 320 */
+
+@media screen and (max-width:320px){
+    nav ul.holder{
+        flex-direction: column;
+        padding: 0;
+    }
+}
+
+
+/* fin de media 320 */
